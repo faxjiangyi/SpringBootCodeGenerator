@@ -298,5 +298,37 @@
         "description": "tk-controller"
       }
     ]
+  },
+
+  {
+    "group": "yiheni",
+    "description": "yiheni模板",
+    "templates": [
+      {
+        "id": "1060",
+        "name": "entity",
+        "description": "entity"
+      },
+      {
+        "id": "1061",
+        "name": "mapper",
+        "description": "mapper"
+      },
+      {
+        "id": "1062",
+        "name": "mapper-xml",
+        "description": "mapper-xml"
+      },
+      {
+        "id": "1063",
+        "name": "helper",
+        "description": "helper"
+      },
+      {
+        "id": "1064",
+        "name": "helper-impl",
+        "description": "helper-impl"
+      }
+    ]
   }
 ]
