@@ -42,6 +42,10 @@ public class GeneratorController {
     public ModelAndView mainPage() {
         return new ModelAndView("main").addObject("value",valueUtil);
     }
+    @GetMapping("/yiheni-index")
+    public ModelAndView yiheniIndexPage() {
+        return new ModelAndView("yiheni-index").addObject("value",valueUtil);
+    }
 
     @RequestMapping("/template/all")
     @ResponseBody

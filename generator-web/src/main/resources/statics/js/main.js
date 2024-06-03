@@ -50,9 +50,9 @@ const vm = new Vue({
 				returnUtilFailure: "${(value.returnUtilFailure)!!}",
 
 				isPackageType: true,
-				isSwagger: false,
-				isAutoImport: false,
-				isWithPackage: false,
+				isSwagger: true,
+				isAutoImport: true,
+				isWithPackage: true,
 				isComment: true,
 				isLombok: true,
 
@@ -63,8 +63,9 @@ const vm = new Vue({
 			}
 		},
 		templates:[{}],
+		yiheniTemplates:[{}],
 		historicalData:[],
-		currentSelect:'plusentity',
+		currentSelect:'domain',
 		outputStr: "${(value.outputStr)!!}",
 		outputJson: {}
 	},
@@ -152,6 +153,9 @@ const vm = new Vue({
 			//console.log(res.templates);
 			vm.templates = JSON.parse(res.templates);
 			// console.log(vm.templates);
+			// filter yiheni templates
+			vm.yiheniTemplates = JSON.parse(res.templates).filter(item => item.group.includes( "yiheni"));
+			// console.log(vm.yiheniTemplates);
 		});
 	},
 	updated: function () {
