@@ -1,4 +1,5 @@
 <#if isWithPackage?exists && isWithPackage==true>package ${packageName}.infrastruture.helper.impl;</#if>
+
 <#if isAutoImport?exists && isAutoImport==true>
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import org.springframework.stereotype.Service;

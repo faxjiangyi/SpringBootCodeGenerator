@@ -1,4 +1,5 @@
 <#if isWithPackage?exists && isWithPackage==true>package ${packageName}.repository;</#if>
+
 <#if isAutoImport?exists && isAutoImport==true>
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import org.apache.ibatis.annotations.Mapper;

@@ -306,8 +306,8 @@
     "templates": [
       {
         "id": "1060",
-        "name": "entity",
-        "description": "entity"
+        "name": "domain",
+        "description": "domain"
       },
       {
         "id": "1061",
