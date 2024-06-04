@@ -330,5 +330,36 @@
         "description": "helper-impl"
       }
     ]
+  },
+
+  {
+    "group": "yhn-cloud",
+    "templates": [
+      {
+        "id": "1160",
+        "name": "cloud-vo",
+        "description": "cloud-vo"
+      },
+      {
+        "id": "1161",
+        "name": "cloud-contract",
+        "description": "cloud-contract"
+      },
+      {
+        "id": "1162",
+        "name": "cloud-service-impl",
+        "description": "cloud-service-impl"
+      },
+      {
+        "id": "1163",
+        "name": "cloud-feign-client",
+        "description": "cloud-feign-client"
+      },
+      {
+        "id": "1164",
+        "name": "cloud-fallback-factory",
+        "description": "cloud-fallback-factory"
+      }
+    ]
   }
 ]

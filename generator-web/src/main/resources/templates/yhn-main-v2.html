@@ -75,6 +75,19 @@
                 <el-form-item label="忽略前缀">
                     <el-input v-model="formData.options.ignorePrefix"></el-input>
                 </el-form-item>
+
+                <!-- yhn-cloud参数  -->
+                <el-form-item label="服务名">
+                    <el-input v-model="formData.options.serviceName" placeholder="serviceName"></el-input>
+                </el-form-item>
+                <el-form-item label="服务url">
+                    <el-input v-model="formData.options.requestMapping" placeholder="requestMapping"></el-input>
+                </el-form-item>
+                <el-form-item label="契约包名">
+                    <el-input v-model="formData.options.contractPackageName"></el-input>
+                </el-form-item>
+                <!-- yhn-cloud参数 结束  -->
+
                 <el-form-item label="输入类型">
                     <el-select v-model="formData.options.dataType" >
                         <el-option label="DDL SQL" value="sql"></el-option>
