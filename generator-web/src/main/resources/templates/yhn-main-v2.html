@@ -247,7 +247,17 @@
     vm.formData.options.returnUtilSuccess="${(value.returnUtilSuccess)!!}";
     vm.formData.options.returnUtilFailure="${(value.returnUtilFailure)!!}";
     vm.outputStr="${(value.outputStr)!!}";
+
+    // yhn-cloud
+    vm.formData.options.serviceName="${(value.serviceName)!!}";
+    vm.formData.options.requestMapping="${(value.requestMapping)!!}";
+    vm.formData.options.contractPackageName="${(value.contractPackageName)!!}";
     loadAllCookie()
+
+
+
+    console.log("dasd");
+    console.log(vm.serviceName);
 </script>
 </body>
 </html>

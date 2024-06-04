@@ -60,3 +60,7 @@ OEM:
   returnUtilFailure: ReturnT.error
   outputStr: loading
   mode: CDN
+  ## yhn-cloud config
+  serviceName: yiheni-msop-biz
+  requestMapping: /模块名
+  contractPackageName: com.yiheni.msop.biz.contract.模块名

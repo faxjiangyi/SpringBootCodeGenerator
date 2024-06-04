@@ -49,5 +49,15 @@ public class ValueUtil {
 
     @Value("${OEM.mode}")
     public String mode;
+
+    @Value("${OEM.serviceName:}")
+    public String serviceName;
+
+    @Value("${OEM.requestMapping:}")
+    public String requestMapping;
+
+    @Value("${OEM.contractPackageName:}")
+    public String contractPackageName;
+
 }
 

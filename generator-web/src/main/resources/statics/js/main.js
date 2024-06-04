@@ -59,7 +59,13 @@ const vm = new Vue({
 				ignorePrefix:"sys_",
 				tinyintTransType: "int",
 				nameCaseType: "CamelCase",
-				timeTransType: "Date"
+				timeTransType: "Date",
+
+				// yhn-cloud
+				serviceName: "${(value.serviceName)!!}",
+				requestMapping: "${(value.requestMapping)!!}",
+				contractPackageName: "${(value.contractPackageName)!!}",
+
 			}
 		},
 		templates:[{}],
@@ -198,5 +204,7 @@ function loadOneCookie(key) {
  * @returns {[string]}
  */
 function list_key_need_load() {
-	return ["authorName","packageName","returnUtilSuccess","returnUtilFailure","ignorePrefix","tinyintTransType","timeTransType"];
+	return ["authorName","packageName","returnUtilSuccess","returnUtilFailure","ignorePrefix","tinyintTransType","timeTransType"
+		,"serviceName", "requestMapping", "contractPackageName"
+	];
 }
