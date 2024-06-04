@@ -30,7 +30,7 @@ public class ServerConfig implements ApplicationListener<WebServerInitializedEve
             String serverPath = event.getApplicationContext().getApplicationName();
             log.info("项目启动成功！访问地址: http://{}:{}{}", hostAddress, serverPort, serverPath);
             log.info("本机地址: http://localhost:{}{}", serverPort, serverPath);
-            log.info("本机地址-医和你: http://localhost:{}{}/yiheni-index", serverPort, serverPath);
+            log.info("本机地址-yhn: http://localhost:{}{}/yhn-index", serverPort, serverPath);
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }

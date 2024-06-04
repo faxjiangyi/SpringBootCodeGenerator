@@ -63,7 +63,7 @@ const vm = new Vue({
 			}
 		},
 		templates:[{}],
-		yiheniTemplates:[{}],
+		yhnTemplates:[{}],
 		historicalData:[],
 		currentSelect:'domain',
 		outputStr: "${(value.outputStr)!!}",
@@ -153,9 +153,9 @@ const vm = new Vue({
 			//console.log(res.templates);
 			vm.templates = JSON.parse(res.templates);
 			// console.log(vm.templates);
-			// filter yiheni templates
-			vm.yiheniTemplates = JSON.parse(res.templates).filter(item => item.group.includes( "yiheni"));
-			// console.log(vm.yiheniTemplates);
+			// filter yhn templates
+			vm.yhnTemplates = JSON.parse(res.templates).filter(item => item.group.includes( "yhn"));
+			// console.log(vm.yhnTemplates);
 		});
 	},
 	updated: function () {
