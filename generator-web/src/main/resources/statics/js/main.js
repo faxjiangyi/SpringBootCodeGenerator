@@ -62,9 +62,9 @@ const vm = new Vue({
 				timeTransType: "Date",
 
 				// yhn-cloud
-				serviceName: "${(value.serviceName)!!}",
-				requestMapping: "${(value.requestMapping)!!}",
-				contractPackageName: "${(value.contractPackageName)!!}",
+				serviceName: "",
+				requestMapping: "",
+				contractPackageName: ""
 
 			}
 		},
